@@ -55,7 +55,7 @@ function initServer() {
   var http = require('http');
   var port = normalizePort(process.env.PORT || config_app.port);
 
-  var { engine } = require('express-handlebars')
+  var exphbs = require('express-handlebars');
   var helpers = require('handlebars-helpers')();
 
   var i18n = require('i18n');
@@ -88,7 +88,7 @@ function initServer() {
   };
 
 
-  app.engine('hbs', engine({
+  app.engine('hbs', exphbs({
     extname: 'hbs',
     defaultView: 'default',
     layoutsDir: __dirname + '/views/layouts',
