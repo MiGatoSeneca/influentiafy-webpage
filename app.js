@@ -1,4 +1,4 @@
-var path = require('path');
+const path = require('path');
 const fs = require('fs');
 
 
@@ -56,7 +56,6 @@ function initServer() {
   var port = normalizePort(process.env.PORT || config_app.port);
 
   var { engine } = require('express-handlebars')
-  console.log(engine);
   var helpers = require('handlebars-helpers')();
 
   var i18n = require('i18n');
