@@ -9,7 +9,7 @@ echo "";
 echo "Subiendo últimos cambios";
 git add --all;
 git commit -m "Uploading changes before init deploy";
-git push origin master;
+git push origin main;
 
 echo "Haciendo instalación para deploy, clave: S1queloes";
 pm2 deploy ecosystem.json production setup

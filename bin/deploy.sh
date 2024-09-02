@@ -4,8 +4,6 @@ echo "Deploy Script 1.0.0 - May 2021";
 echo "";
 echo "Bienvenido al sistema de deploy";
 echo "";
-ls -l deploys/ | grep '^d' | grep -o '[^ ]\+$'
-echo "";
 
 echo "Subiendo últimos cambios";
 git add --all;
