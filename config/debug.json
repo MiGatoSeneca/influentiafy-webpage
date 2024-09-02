@@ -1,0 +1,6 @@
+{
+  "query": true,
+  "https": true,
+  "calls": true,
+  "module": true
+}

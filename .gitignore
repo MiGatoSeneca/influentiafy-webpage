@@ -1,0 +1,31 @@
+#OS X
+.DS_Store*
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+.directory
+*~
+
+
+# npm
+node_modules
+package-lock.json
+*.log
+*.gz
+
+# public/test (Omitir las páginas de test)
+public/test
+
+# i18n (Omitir en la rama de internacionalización)
+i18n/*.json
+
+# Coveralls
+coverage
+
+# Benchmarking
+benchmarks/graphs

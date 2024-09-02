@@ -1,0 +1,9 @@
+{
+  "host": "localhost",
+  "port": "8889",
+  "database": "influentiafy",
+  "user": "root",
+  "password": "root",
+  "multipleStatements": true,
+  "charset": "utf8mb4_unicode_ci"
+}

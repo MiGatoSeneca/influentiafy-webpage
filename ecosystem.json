@@ -1,0 +1,18 @@
+{
+  "apps": [
+    {
+      "name": "influentiafy-webpage",
+      "script": "app.js"
+    }
+  ],
+  "deploy" : {
+    "production" : {
+      "user" : "root",
+      "host" : ["37.187.121.26"],
+      "path" : "/var/www/influentiafy/webpage",
+      "ref"  : "origin/main",
+      "repo" : "git@github.com:MiGatoSeneca/influentiafy-webpage.git",
+      "post-deploy" : "npm install && pm2 reload ecosystem.json --env production"
+    }
+  }
+}
